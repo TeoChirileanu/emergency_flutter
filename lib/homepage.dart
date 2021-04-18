@@ -31,8 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
               title: Center(
                 child: AutoSizeText(
                   "Bun venit, ce ați dori să faceți? 🙂",
-                  style: GoogleFonts.montserrat(fontSize: 99),
-                  maxLines: 1,
+                  style: GoogleFonts.montserrat(fontSize: 40),
                 ),
               ),
               subtitle: Center(
