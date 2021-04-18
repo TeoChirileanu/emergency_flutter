@@ -25,12 +25,24 @@ class _MyHomePageState extends State<MyHomePage> {
       child: AspectRatio(
         aspectRatio: 3 / 2,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            AutoSizeText(
-              "Bun venit, ce ați dori să faceți? 🙂",
-              style: GoogleFonts.montserrat(fontSize: 99),
-              maxLines: 1,
-            ),
+            ListTile(
+              title: Center(
+                child: AutoSizeText(
+                  "Bun venit, ce ați dori să faceți? 🙂",
+                  style: GoogleFonts.montserrat(fontSize: 99),
+                  maxLines: 1,
+                ),
+              ),
+              subtitle: Center(
+                child: DropdownButton(
+                  value: "urgenta",
+                  items: widget._optiuniDeSelectare,
+                  onChanged: (value) {},
+                ),
+              ),
+            )
           ],
         ),
       ),
