@@ -16,9 +16,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Center(
             child: AutoSizeText(
-              "Urgentator ",
-              style: GoogleFonts.sacramento(fontSize: 99),
-              maxLines: 1,
+              "Urgentator 🚑",
+              style: GoogleFonts.montserrat(fontSize: 50),
             ),
           ),
         ),
