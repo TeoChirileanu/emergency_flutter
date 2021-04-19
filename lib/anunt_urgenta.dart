@@ -11,9 +11,9 @@ class Urgenta extends StatelessWidget {
           child: AutoSizeText(
             "Anunță o urgență 🤯",
             style: GoogleFonts.montserrat(),
-            minFontSize: 30,
-            maxFontSize: 50,
             maxLines: 1,
+            minFontSize: 0,
+            maxFontSize: 99,
           ),
         ),
       ),

@@ -11,9 +11,9 @@ class Inscriere extends StatelessWidget {
           child: AutoSizeText(
             "Înscriere ca voluntar 🖐",
             style: GoogleFonts.montserrat(),
-            minFontSize: 30,
-            maxFontSize: 50,
             maxLines: 1,
+            minFontSize: 0,
+            maxFontSize: 99,
           ),
         ),
       ),

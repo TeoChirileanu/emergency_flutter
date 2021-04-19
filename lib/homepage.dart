@@ -23,41 +23,51 @@ class _MyHomePageState extends State<MyHomePage> {
               title: Center(
                 child: AutoSizeText(
                   "Bun venit, ce ați dori să faceți? 🙂",
-                  style: GoogleFonts.montserrat(fontSize: 40),
+                  style: GoogleFonts.montserrat(),
                   maxLines: 1,
-                  minFontSize: 24,
-                  maxFontSize: 50,
+                  minFontSize: 0,
+                  maxFontSize: 99,
                 ),
               ),
               subtitle: Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    OutlinedButton(
-                      child: Center(
-                        child: AutoSizeText(
-                          "Înscrie-te ca voluntar 🖐",
-                          style: GoogleFonts.montserrat(fontSize: 15),
+                    Expanded(
+                      child: OutlinedButton(
+                        child: Center(
+                          child: AutoSizeText(
+                            "Înscrie-te ca voluntar 🖐",
+                            style: GoogleFonts.montserrat(),
+                            maxLines: 1,
+                            minFontSize: 0,
+                            maxFontSize: 99,
+                          ),
                         ),
-                      ),
-                      onPressed: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Inscriere(),
+                        onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Inscriere(),
+                          ),
                         ),
                       ),
                     ),
-                    OutlinedButton(
-                      child: Center(
-                        child: AutoSizeText(
-                          "Anunță o urgență 🤯",
-                          style: GoogleFonts.montserrat(fontSize: 15),
+                    Expanded(
+                      child: OutlinedButton(
+                        child: Center(
+                          child: AutoSizeText(
+                            "Anunță o urgență 🤯",
+                            style: GoogleFonts.montserrat(),
+                            maxLines: 1,
+                            minFontSize: 0,
+                            maxFontSize: 99,
+                          ),
                         ),
-                      ),
-                      onPressed: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Urgenta(),
+                        onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Urgenta(),
+                          ),
                         ),
                       ),
                     ),
