@@ -18,7 +18,103 @@ class Inscriere extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: Text("TODO"),
+        child: AspectRatio(
+          aspectRatio: 3 / 2,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(
+                children: [
+                  Flexible(
+                    child: ListTile(
+                      leading: Icon(Icons.person),
+                      subtitle: Center(
+                        child: TextField(
+                          textAlign: TextAlign.center,
+                          decoration: InputDecoration(hintText: "Nume"),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    child: ListTile(
+                      leading: Icon(Icons.person_outline),
+                      subtitle: Center(
+                        child: TextField(
+                          textAlign: TextAlign.center,
+                          decoration: InputDecoration(hintText: "Prenume"),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Flexible(
+                    child: ListTile(
+                      leading: Icon(Icons.looks_one),
+                      subtitle: Center(
+                        child: TextField(
+                          textAlign: TextAlign.center,
+                          decoration: InputDecoration(hintText: "Varsta"),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    child: ListTile(
+                      leading: Icon(Icons.location_city),
+                      subtitle: Center(
+                        child: TextField(
+                          textAlign: TextAlign.center,
+                          decoration: InputDecoration(hintText: "Domiciliul"),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Flexible(
+                    child: ListTile(
+                      leading: Icon(Icons.medical_services),
+                      subtitle: Center(
+                        child: TextField(
+                          textAlign: TextAlign.center,
+                          decoration: InputDecoration(hintText: "Statut"),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    child: ListTile(
+                      leading: Icon(Icons.link),
+                      subtitle: Center(
+                        child: TextField(
+                          textAlign: TextAlign.center,
+                          decoration: InputDecoration(hintText: "Link Diplomă"),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    child: Center(
+                      child: Text("Înregistrează-te"),
+                    ),
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
