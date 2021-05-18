@@ -1,9 +1,9 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:emergency_flutter/anunt_urgenta.dart';
+import 'package:emergency_flutter/anunta_o_urgenta.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'inscriere.dart';
+import 'formular_inscriere.dart';
 
 class MyHomePage extends StatefulWidget {
   @override

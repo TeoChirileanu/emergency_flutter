@@ -31,18 +31,20 @@ class Inscriere extends StatelessWidget {
                       subtitle: Center(
                         child: TextField(
                           textAlign: TextAlign.center,
-                          decoration: InputDecoration(hintText: "Nume"),
+                          decoration:
+                              InputDecoration(hintText: "Numele Complet"),
                         ),
                       ),
                     ),
                   ),
                   Flexible(
                     child: ListTile(
-                      leading: Icon(Icons.person_outline),
+                      leading: Icon(Icons.looks_one),
                       subtitle: Center(
                         child: TextField(
                           textAlign: TextAlign.center,
-                          decoration: InputDecoration(hintText: "Prenume"),
+                          decoration:
+                              InputDecoration(hintText: "Data Nașterii"),
                         ),
                       ),
                     ),
@@ -51,17 +53,6 @@ class Inscriere extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Flexible(
-                    child: ListTile(
-                      leading: Icon(Icons.looks_one),
-                      subtitle: Center(
-                        child: TextField(
-                          textAlign: TextAlign.center,
-                          decoration: InputDecoration(hintText: "Varsta"),
-                        ),
-                      ),
-                    ),
-                  ),
                   Flexible(
                     child: ListTile(
                       leading: Icon(Icons.location_city),
@@ -73,10 +64,6 @@ class Inscriere extends StatelessWidget {
                       ),
                     ),
                   ),
-                ],
-              ),
-              Row(
-                children: [
                   Flexible(
                     child: ListTile(
                       leading: Icon(Icons.medical_services),
@@ -88,13 +75,30 @@ class Inscriere extends StatelessWidget {
                       ),
                     ),
                   ),
+                ],
+              ),
+              Row(
+                children: [
                   Flexible(
                     child: ListTile(
                       leading: Icon(Icons.link),
                       subtitle: Center(
                         child: TextField(
                           textAlign: TextAlign.center,
-                          decoration: InputDecoration(hintText: "Link Diplomă"),
+                          decoration:
+                              InputDecoration(hintText: "Link către Buletin"),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    child: ListTile(
+                      leading: Icon(Icons.link),
+                      subtitle: Center(
+                        child: TextField(
+                          textAlign: TextAlign.center,
+                          decoration:
+                              InputDecoration(hintText: "Link către Diplomă"),
                         ),
                       ),
                     ),
@@ -108,7 +112,13 @@ class Inscriere extends StatelessWidget {
                     child: Center(
                       child: Text("Înregistrează-te"),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text("Înregistrare Reușită"),
+                        ),
+                      );
+                    },
                   ),
                 ],
               ),
