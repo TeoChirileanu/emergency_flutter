@@ -10,13 +10,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Urgentator 🚑',
+      title: 'Urgentator',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Center(
             child: AutoSizeText(
-              "Urgentator 🚑",
+              "Urgentator",
               style: GoogleFonts.montserrat(fontSize: 50),
             ),
           ),

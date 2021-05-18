@@ -1,5 +1,4 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:emergency_flutter/anunta_o_urgenta.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -22,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ListTile(
               title: Center(
                 child: AutoSizeText(
-                  "Bun venit, ce ați dori să faceți? 🙂",
+                  "Bun venit, ce ați dori să faceți?",
                   style: GoogleFonts.montserrat(),
                   maxLines: 1,
                   minFontSize: 0,
@@ -37,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: OutlinedButton(
                         child: Center(
                           child: AutoSizeText(
-                            "Înscrie-te ca voluntar 🖐",
+                            "Înscrie-te ca voluntar",
                             style: GoogleFonts.montserrat(),
                             maxLines: 1,
                             minFontSize: 0,
@@ -48,25 +47,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           context,
                           MaterialPageRoute(
                             builder: (context) => Inscriere(),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: OutlinedButton(
-                        child: Center(
-                          child: AutoSizeText(
-                            "Anunță o urgență 🤯",
-                            style: GoogleFonts.montserrat(),
-                            maxLines: 1,
-                            minFontSize: 0,
-                            maxFontSize: 99,
-                          ),
-                        ),
-                        onPressed: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => Urgenta(),
                           ),
                         ),
                       ),

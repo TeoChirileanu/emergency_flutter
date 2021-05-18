@@ -9,7 +9,7 @@ class Inscriere extends StatelessWidget {
       appBar: AppBar(
         title: Center(
           child: AutoSizeText(
-            "Înscriere ca voluntar 🖐",
+            "Înscriere ca voluntar",
             style: GoogleFonts.montserrat(),
             maxLines: 1,
             minFontSize: 0,
@@ -27,7 +27,6 @@ class Inscriere extends StatelessWidget {
                 children: [
                   Flexible(
                     child: ListTile(
-                      leading: Icon(Icons.person),
                       subtitle: Center(
                         child: TextField(
                           textAlign: TextAlign.center,
@@ -39,7 +38,6 @@ class Inscriere extends StatelessWidget {
                   ),
                   Flexible(
                     child: ListTile(
-                      leading: Icon(Icons.looks_one),
                       subtitle: Center(
                         child: TextField(
                           textAlign: TextAlign.center,
@@ -55,7 +53,6 @@ class Inscriere extends StatelessWidget {
                 children: [
                   Flexible(
                     child: ListTile(
-                      leading: Icon(Icons.location_city),
                       subtitle: Center(
                         child: TextField(
                           textAlign: TextAlign.center,
@@ -66,7 +63,6 @@ class Inscriere extends StatelessWidget {
                   ),
                   Flexible(
                     child: ListTile(
-                      leading: Icon(Icons.medical_services),
                       subtitle: Center(
                         child: TextField(
                           textAlign: TextAlign.center,
@@ -81,7 +77,6 @@ class Inscriere extends StatelessWidget {
                 children: [
                   Flexible(
                     child: ListTile(
-                      leading: Icon(Icons.link),
                       subtitle: Center(
                         child: TextField(
                           textAlign: TextAlign.center,
@@ -93,7 +88,6 @@ class Inscriere extends StatelessWidget {
                   ),
                   Flexible(
                     child: ListTile(
-                      leading: Icon(Icons.link),
                       subtitle: Center(
                         child: TextField(
                           textAlign: TextAlign.center,
